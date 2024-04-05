@@ -1,0 +1,22 @@
+{
+  "name": "prueba-tecnica-angie-maldonado",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cucumberTest": "npx cypress run --spec 'cypress/e2e/PruebaQA/**/*.feature'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.7.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/PruebaQA/Tests"
+  }
+}
+
